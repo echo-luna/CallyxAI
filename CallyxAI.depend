@@ -1,0 +1,3114 @@
+# depslib dependency file v1.0
+1679879432 source:c:\users\eleanor\documents\callyxai\src\ai_core.cpp
+	"AI_Core.h"
+
+1680135635 c:\users\eleanor\documents\callyxai\include\ai_core.h
+	<string>
+	<vector>
+	<iostream>
+	<atomic>
+	<memory>
+	<opennn/opennn.h>
+	<boost/serialization/access.hpp>
+	<boost/serialization/serialization.hpp>
+	<boost/serialization/split_member.hpp>
+	<boost/archive/text_iarchive.hpp>
+	<boost/archive/text_oarchive.hpp>
+	"safe_queue.h"
+	"c_msg.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\opennn.h
+	"config.h"
+	"half.hpp"
+	"data_set.h"
+	"config.h"
+	"layer.h"
+	"pooling_layer.h"
+	"convolutional_layer.h"
+	"bounding_layer.h"
+	"perceptron_layer.h"
+	"long_short_term_memory_layer.h"
+	"recurrent_layer.h"
+	"probabilistic_layer.h"
+	"scaling_layer.h"
+	"region_proposal_layer.h"
+	"non_max_suppression_layer.h"
+	"unscaling_layer.h"
+	"flatten_layer.h"
+	"neural_network.h"
+	"loss_index.h"
+	"cross_entropy_error.h"
+	"mean_squared_error.h"
+	"minkowski_error.h"
+	"normalized_squared_error.h"
+	"sum_squared_error.h"
+	"weighted_squared_error.h"
+	"conjugate_gradient.h"
+	"gradient_descent.h"
+	"levenberg_marquardt_algorithm.h"
+	"quasi_newton_method.h"
+	"optimization_algorithm.h"
+	"learning_rate_algorithm.h"
+	"model_selection.h"
+	"neurons_selection.h"
+	"growing_neurons.h"
+	"inputs_selection.h"
+	"growing_inputs.h"
+	"genetic_algorithm.h"
+	"testing_analysis.h"
+	"numerical_differentiation.h"
+	"correlations.h"
+	"response_optimization.h"
+	"opennn_strings.h"
+	"opennn_images.h"
+	"tensor_utilities.h"
+	"statistics.h"
+	"scaling.h"
+	"region_based_object_detector.h"
+	"json_to_xml.h"
+	"text_analytics.h"
+	"codification.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\config.h
+	"half.hpp"
+	"../mkl/mkl.h"
+	"../eigen/Eigen/src/Core/util/DisableStupidWarnings.h"
+	"tinyxml2.h"
+	"../eigen/unsupported/Eigen/CXX11/Tensor"
+	"../eigen/unsupported/Eigen/CXX11/ThreadPool"
+	"../../opennn-cuda/opennn-cuda/kernel.cuh"
+	"cuda.h"
+	"cuda_runtime.h"
+	"cublas_v2.h"
+	<cublasXt.h>
+	<curand.h>
+	<omp.h>
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\half.hpp
+	<utility>
+	<utility>
+	<algorithm>
+	<istream>
+	<ostream>
+	<limits>
+	<stdexcept>
+	<climits>
+	<cmath>
+	<cstring>
+	<cstdlib>
+	<type_traits>
+	<cstdint>
+	<cerrno>
+	<cfenv>
+	<functional>
+	<immintrin.h>
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl.h
+	"mkl_version.h"
+	"mkl_types.h"
+	"mkl_blas.h"
+	"mkl_trans.h"
+	"mkl_cblas.h"
+	"mkl_spblas.h"
+	"mkl_lapack.h"
+	"mkl_lapacke.h"
+	"mkl_pardiso.h"
+	"mkl_sparse_handle.h"
+	"mkl_dss.h"
+	"mkl_rci.h"
+	"mkl_vml.h"
+	"mkl_vsl.h"
+	"mkl_df.h"
+	"mkl_service.h"
+	"mkl_dfti.h"
+	"mkl_trig_transforms.h"
+	"mkl_poisson.h"
+	"mkl_solvers_ee.h"
+	"mkl_direct_call.h"
+	"mkl_compact.h"
+	"mkl_graph.h"
+	"mkl_sparse_qr.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_version.h
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_types.h
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_blas.h
+	<stddef.h>
+	"mkl_types.h"
+	"mkl_blas_64.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_blas_64.h
+	<stddef.h>
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_trans.h
+	<stddef.h>
+	"mkl_types.h"
+	"mkl_trans_names.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_trans_names.h
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_cblas.h
+	<stddef.h>
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_spblas.h
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_lapack.h
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_lapacke.h
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_pardiso.h
+	"mkl_dss.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_dss.h
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_sparse_handle.h
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_rci.h
+	"mkl_types.h"
+	"mkl_service.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_service.h
+	<stdlib.h>
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_vml.h
+	"mkl_vml_defines.h"
+	"mkl_vml_types.h"
+	"mkl_vml_functions.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_vml_defines.h
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_vml_types.h
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_vml_functions.h
+	"mkl_vml_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_vsl.h
+	"mkl_vsl_defines.h"
+	"mkl_vsl_functions.h"
+	"mkl_vsl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_vsl_defines.h
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_vsl_functions.h
+	"mkl_vsl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_vsl_types.h
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_df.h
+	"mkl_df_defines.h"
+	"mkl_df_functions.h"
+	"mkl_df_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_df_defines.h
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_df_functions.h
+	"mkl_df_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_df_types.h
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_dfti.h
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_trig_transforms.h
+	"mkl_types.h"
+	"mkl_dfti.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_poisson.h
+	"mkl_types.h"
+	"mkl_dfti.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_solvers_ee.h
+	"mkl_spblas.h"
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_direct_call.h
+	"mkl_blas.h"
+	"mkl_lapack.h"
+	"mkl_lapacke.h"
+	"mkl_types.h"
+	"mkl_direct_types.h"
+	"mkl_direct_blas.h"
+	"mkl_direct_lapack.h"
+	"mkl_direct_types.h"
+	"mkl_direct_blas.h"
+	"mkl_direct_lapack.h"
+	"mkl_direct_types.h"
+	"mkl_direct_blas.h"
+	"mkl_direct_lapack.h"
+	"mkl_direct_types.h"
+	"mkl_direct_blas.h"
+	"mkl_direct_lapack.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_direct_types.h
+	"mkl_types.h"
+	<math.h>
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_direct_blas.h
+	"mkl_types.h"
+	"immintrin.h"
+	"mkl_direct_blas_kernels.h"
+	"mkl_direct_blas_kernels.h"
+	"mkl_direct_blas_kernels.h"
+	"mkl_direct_blas_kernels.h"
+	"mkl_direct_blas_kernels.h"
+	"mkl_direct_blas_kernels.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_direct_blas_kernels.h
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_direct_lapack.h
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_compact.h
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_graph.h
+	<stddef.h>
+	<stdint.h>
+	"mkl_types.h"
+
+1672846518 d:\opennn\opennn-6.0.2\mkl\mkl_sparse_qr.h
+	"mkl_types.h"
+	"mkl_spblas.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\disablestupidwarnings.h
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\tinyxml2.h
+	<ctype.h>
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stddef.h>
+	<cctype>
+	<climits>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<stdint.h>
+	<android/log.h>
+	<assert.h>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\tensor
+	"../../../Eigen/Core"
+	"../SpecialFunctions"
+	"../../../Eigen/src/Core/util/DisableStupidWarnings.h"
+	"src/util/CXX11Meta.h"
+	"src/util/MaxSizeVector.h"
+	<atomic>
+	<chrono>
+	<cmath>
+	<cstddef>
+	<cstring>
+	<random>
+	<thread>
+	"ThreadPool"
+	<iostream>
+	<hip/hip_runtime.h>
+	<cuda_runtime.h>
+	"src/Tensor/TensorMacros.h"
+	"src/Tensor/TensorForwardDeclarations.h"
+	"src/Tensor/TensorMeta.h"
+	"src/Tensor/TensorFunctors.h"
+	"src/Tensor/TensorCostModel.h"
+	"src/Tensor/TensorDeviceDefault.h"
+	"src/Tensor/TensorDeviceThreadPool.h"
+	"src/Tensor/TensorDeviceGpu.h"
+	"src/Tensor/TensorDeviceSycl.h"
+	"src/Tensor/TensorIndexList.h"
+	"src/Tensor/TensorDimensionList.h"
+	"src/Tensor/TensorDimensions.h"
+	"src/Tensor/TensorInitializer.h"
+	"src/Tensor/TensorTraits.h"
+	"src/Tensor/TensorRandom.h"
+	"src/Tensor/TensorUInt128.h"
+	"src/Tensor/TensorIntDiv.h"
+	"src/Tensor/TensorGlobalFunctions.h"
+	"src/Tensor/TensorBase.h"
+	"src/Tensor/TensorBlock.h"
+	"src/Tensor/TensorEvaluator.h"
+	"src/Tensor/TensorExpr.h"
+	"src/Tensor/TensorReduction.h"
+	"src/Tensor/TensorReductionGpu.h"
+	"src/Tensor/TensorArgMax.h"
+	"src/Tensor/TensorConcatenation.h"
+	"src/Tensor/TensorContractionMapper.h"
+	"src/Tensor/TensorContractionBlocking.h"
+	"src/Tensor/TensorContraction.h"
+	"src/Tensor/TensorContractionThreadPool.h"
+	"src/Tensor/TensorContractionGpu.h"
+	"src/Tensor/TensorConversion.h"
+	"src/Tensor/TensorConvolution.h"
+	"src/Tensor/TensorFFT.h"
+	"src/Tensor/TensorPatch.h"
+	"src/Tensor/TensorImagePatch.h"
+	"src/Tensor/TensorVolumePatch.h"
+	"src/Tensor/TensorBroadcasting.h"
+	"src/Tensor/TensorChipping.h"
+	"src/Tensor/TensorInflation.h"
+	"src/Tensor/TensorLayoutSwap.h"
+	"src/Tensor/TensorMorphing.h"
+	"src/Tensor/TensorPadding.h"
+	"src/Tensor/TensorReverse.h"
+	"src/Tensor/TensorShuffling.h"
+	"src/Tensor/TensorStriding.h"
+	"src/Tensor/TensorCustomOp.h"
+	"src/Tensor/TensorEvalTo.h"
+	"src/Tensor/TensorForcedEval.h"
+	"src/Tensor/TensorGenerator.h"
+	"src/Tensor/TensorAssign.h"
+	"src/Tensor/TensorScan.h"
+	"src/Tensor/TensorTrace.h"
+	"src/Tensor/TensorReductionSycl.h"
+	"src/Tensor/TensorConvolutionSycl.h"
+	"src/Tensor/TensorContractionSycl.h"
+	"src/Tensor/TensorScanSycl.h"
+	"src/Tensor/TensorExecutor.h"
+	"src/Tensor/TensorDevice.h"
+	"src/Tensor/TensorStorage.h"
+	"src/Tensor/Tensor.h"
+	"src/Tensor/TensorFixedSize.h"
+	"src/Tensor/TensorMap.h"
+	"src/Tensor/TensorRef.h"
+	"src/Tensor/TensorIO.h"
+	"../../../Eigen/src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\core
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Core/util/Macros.h"
+	"src/Core/util/ConfigureVectorization.h"
+	<cuda_runtime.h>
+	<hip/hip_runtime.h>
+	<new>
+	<complex>
+	"src/Core/util/MKL_support.h"
+	<omp.h>
+	<cerrno>
+	<cstddef>
+	<cstdlib>
+	<cmath>
+	<cassert>
+	<functional>
+	<sstream>
+	<iosfwd>
+	<cstring>
+	<string>
+	<limits>
+	<climits>
+	<algorithm>
+	<array>
+	<type_traits>
+	<iostream>
+	<intrin.h>
+	<CL/sycl.hpp>
+	<map>
+	<memory>
+	<utility>
+	<thread>
+	"src/Core/util/Constants.h"
+	"src/Core/util/Meta.h"
+	"src/Core/util/ForwardDeclarations.h"
+	"src/Core/util/StaticAssert.h"
+	"src/Core/util/XprHelper.h"
+	"src/Core/util/Memory.h"
+	"src/Core/util/IntegralConstant.h"
+	"src/Core/util/SymbolicIndex.h"
+	"src/Core/NumTraits.h"
+	"src/Core/MathFunctions.h"
+	"src/Core/GenericPacketMath.h"
+	"src/Core/MathFunctionsImpl.h"
+	"src/Core/arch/Default/ConjHelper.h"
+	"src/Core/arch/Default/Half.h"
+	"src/Core/arch/Default/BFloat16.h"
+	"src/Core/arch/Default/TypeCasting.h"
+	"src/Core/arch/Default/GenericPacketMathFunctionsFwd.h"
+	"src/Core/arch/SSE/PacketMath.h"
+	"src/Core/arch/SSE/TypeCasting.h"
+	"src/Core/arch/SSE/Complex.h"
+	"src/Core/arch/AVX/PacketMath.h"
+	"src/Core/arch/AVX/TypeCasting.h"
+	"src/Core/arch/AVX/Complex.h"
+	"src/Core/arch/AVX512/PacketMath.h"
+	"src/Core/arch/AVX512/TypeCasting.h"
+	"src/Core/arch/AVX512/Complex.h"
+	"src/Core/arch/SSE/MathFunctions.h"
+	"src/Core/arch/AVX/MathFunctions.h"
+	"src/Core/arch/AVX512/MathFunctions.h"
+	"src/Core/arch/SSE/PacketMath.h"
+	"src/Core/arch/SSE/TypeCasting.h"
+	"src/Core/arch/SSE/Complex.h"
+	"src/Core/arch/AVX/PacketMath.h"
+	"src/Core/arch/AVX/TypeCasting.h"
+	"src/Core/arch/AVX/Complex.h"
+	"src/Core/arch/SSE/MathFunctions.h"
+	"src/Core/arch/AVX/MathFunctions.h"
+	"src/Core/arch/SSE/PacketMath.h"
+	"src/Core/arch/SSE/TypeCasting.h"
+	"src/Core/arch/SSE/MathFunctions.h"
+	"src/Core/arch/SSE/Complex.h"
+	"src/Core/arch/AltiVec/PacketMath.h"
+	"src/Core/arch/AltiVec/MathFunctions.h"
+	"src/Core/arch/AltiVec/Complex.h"
+	"src/Core/arch/NEON/PacketMath.h"
+	"src/Core/arch/NEON/TypeCasting.h"
+	"src/Core/arch/NEON/MathFunctions.h"
+	"src/Core/arch/NEON/Complex.h"
+	"src/Core/arch/SVE/PacketMath.h"
+	"src/Core/arch/SVE/TypeCasting.h"
+	"src/Core/arch/SVE/MathFunctions.h"
+	"src/Core/arch/ZVector/PacketMath.h"
+	"src/Core/arch/ZVector/MathFunctions.h"
+	"src/Core/arch/ZVector/Complex.h"
+	"src/Core/arch/MSA/PacketMath.h"
+	"src/Core/arch/MSA/MathFunctions.h"
+	"src/Core/arch/MSA/Complex.h"
+	"src/Core/arch/GPU/PacketMath.h"
+	"src/Core/arch/GPU/MathFunctions.h"
+	"src/Core/arch/GPU/TypeCasting.h"
+	"src/Core/arch/SYCL/SyclMemoryModel.h"
+	"src/Core/arch/SYCL/InteropHeaders.h"
+	"src/Core/arch/SYCL/PacketMath.h"
+	"src/Core/arch/SYCL/MathFunctions.h"
+	"src/Core/arch/SYCL/TypeCasting.h"
+	"src/Core/arch/Default/Settings.h"
+	"src/Core/arch/Default/GenericPacketMathFunctions.h"
+	"src/Core/functors/TernaryFunctors.h"
+	"src/Core/functors/BinaryFunctors.h"
+	"src/Core/functors/UnaryFunctors.h"
+	"src/Core/functors/NullaryFunctors.h"
+	"src/Core/functors/StlFunctors.h"
+	"src/Core/functors/AssignmentFunctors.h"
+	"src/Core/arch/CUDA/Complex.h"
+	"src/Core/util/IndexedViewHelper.h"
+	"src/Core/util/ReshapedHelper.h"
+	"src/Core/ArithmeticSequence.h"
+	"src/Core/IO.h"
+	"src/Core/DenseCoeffsBase.h"
+	"src/Core/DenseBase.h"
+	"src/Core/MatrixBase.h"
+	"src/Core/EigenBase.h"
+	"src/Core/Product.h"
+	"src/Core/CoreEvaluators.h"
+	"src/Core/AssignEvaluator.h"
+	"src/Core/Assign.h"
+	"src/Core/ArrayBase.h"
+	"src/Core/util/BlasUtil.h"
+	"src/Core/DenseStorage.h"
+	"src/Core/NestByValue.h"
+	"src/Core/ReturnByValue.h"
+	"src/Core/NoAlias.h"
+	"src/Core/PlainObjectBase.h"
+	"src/Core/Matrix.h"
+	"src/Core/Array.h"
+	"src/Core/CwiseTernaryOp.h"
+	"src/Core/CwiseBinaryOp.h"
+	"src/Core/CwiseUnaryOp.h"
+	"src/Core/CwiseNullaryOp.h"
+	"src/Core/CwiseUnaryView.h"
+	"src/Core/SelfCwiseBinaryOp.h"
+	"src/Core/Dot.h"
+	"src/Core/StableNorm.h"
+	"src/Core/Stride.h"
+	"src/Core/MapBase.h"
+	"src/Core/Map.h"
+	"src/Core/Ref.h"
+	"src/Core/Block.h"
+	"src/Core/VectorBlock.h"
+	"src/Core/IndexedView.h"
+	"src/Core/Reshaped.h"
+	"src/Core/Transpose.h"
+	"src/Core/DiagonalMatrix.h"
+	"src/Core/Diagonal.h"
+	"src/Core/DiagonalProduct.h"
+	"src/Core/Redux.h"
+	"src/Core/Visitor.h"
+	"src/Core/Fuzzy.h"
+	"src/Core/Swap.h"
+	"src/Core/CommaInitializer.h"
+	"src/Core/GeneralProduct.h"
+	"src/Core/Solve.h"
+	"src/Core/Inverse.h"
+	"src/Core/SolverBase.h"
+	"src/Core/PermutationMatrix.h"
+	"src/Core/Transpositions.h"
+	"src/Core/TriangularMatrix.h"
+	"src/Core/SelfAdjointView.h"
+	"src/Core/products/GeneralBlockPanelKernel.h"
+	"src/Core/products/Parallelizer.h"
+	"src/Core/ProductEvaluators.h"
+	"src/Core/products/GeneralMatrixVector.h"
+	"src/Core/products/GeneralMatrixMatrix.h"
+	"src/Core/SolveTriangular.h"
+	"src/Core/products/GeneralMatrixMatrixTriangular.h"
+	"src/Core/products/SelfadjointMatrixVector.h"
+	"src/Core/products/SelfadjointMatrixMatrix.h"
+	"src/Core/products/SelfadjointProduct.h"
+	"src/Core/products/SelfadjointRank2Update.h"
+	"src/Core/products/TriangularMatrixVector.h"
+	"src/Core/products/TriangularMatrixMatrix.h"
+	"src/Core/products/TriangularSolverMatrix.h"
+	"src/Core/products/TriangularSolverVector.h"
+	"src/Core/BandMatrix.h"
+	"src/Core/CoreIterators.h"
+	"src/Core/ConditionEstimator.h"
+	"src/Core/arch/AltiVec/MatrixProduct.h"
+	"src/Core/arch/NEON/GeneralBlockPanelKernel.h"
+	"src/Core/BooleanRedux.h"
+	"src/Core/Select.h"
+	"src/Core/VectorwiseOp.h"
+	"src/Core/PartialReduxEvaluator.h"
+	"src/Core/Random.h"
+	"src/Core/Replicate.h"
+	"src/Core/Reverse.h"
+	"src/Core/ArrayWrapper.h"
+	"src/Core/StlIterators.h"
+	"src/Core/products/GeneralMatrixMatrix_BLAS.h"
+	"src/Core/products/GeneralMatrixVector_BLAS.h"
+	"src/Core/products/GeneralMatrixMatrixTriangular_BLAS.h"
+	"src/Core/products/SelfadjointMatrixMatrix_BLAS.h"
+	"src/Core/products/SelfadjointMatrixVector_BLAS.h"
+	"src/Core/products/TriangularMatrixMatrix_BLAS.h"
+	"src/Core/products/TriangularMatrixVector_BLAS.h"
+	"src/Core/products/TriangularSolverMatrix_BLAS.h"
+	"src/Core/Assign_MKL.h"
+	"src/Core/GlobalFunctions.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\macros.h
+	<cuda.h>
+	<hip/hip_runtime.h>
+	<cmath>
+	<cstdlib>
+	<iostream>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\configurevectorization.h
+	<malloc.h>
+	<immintrin.h>
+	<mmintrin.h>
+	<emmintrin.h>
+	<xmmintrin.h>
+	<pmmintrin.h>
+	<tmmintrin.h>
+	<smmintrin.h>
+	<nmmintrin.h>
+	<immintrin.h>
+	<altivec.h>
+	<altivec.h>
+	<arm_neon.h>
+	<arm_sve.h>
+	<vecintrin.h>
+	<msa.h>
+	<arm_fp16.h>
+	<immintrin.h>
+	<vector_types.h>
+	<cuda_runtime_api.h>
+	<cuda_fp16.h>
+	<hip/hip_vector_types.h>
+	<hip/hip_fp16.h>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\mkl_support.h
+	<mkl.h>
+	"../../misc/blas.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\misc\blas.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\constants.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\meta.h
+	<cfloat>
+	<math_constants.h>
+	"Eigen/src/Core/arch/HIP/hcc/math_constants.h"
+	<cstdint>
+	<stdint.h>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\forwarddeclarations.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\staticassert.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\xprhelper.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\memory.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\integralconstant.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\symbolicindex.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\numtraits.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\genericpacketmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\mathfunctionsimpl.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\default\conjhelper.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\default\half.h
+	<sstream>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\default\bfloat16.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\default\typecasting.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\default\genericpacketmathfunctionsfwd.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sse\packetmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sse\typecasting.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sse\complex.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\avx\packetmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\avx\typecasting.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\avx\complex.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\avx512\packetmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\avx512\typecasting.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\avx512\complex.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sse\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\avx\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\avx512\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\altivec\packetmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\altivec\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\altivec\complex.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\neon\packetmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\neon\typecasting.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\neon\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\neon\complex.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sve\packetmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sve\typecasting.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sve\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\zvector\packetmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\zvector\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\zvector\complex.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\msa\packetmath.h
+	<iostream>
+	<string>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\msa\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\msa\complex.h
+	<iostream>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\gpu\packetmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\gpu\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\gpu\typecasting.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sycl\syclmemorymodel.h
+	<CL/sycl.hpp>
+	<stdexcept>
+	<cstddef>
+	<queue>
+	<set>
+	<unordered_map>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sycl\interopheaders.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sycl\packetmath.h
+	<type_traits>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sycl\mathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\sycl\typecasting.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\default\settings.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\default\genericpacketmathfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\functors\ternaryfunctors.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\functors\binaryfunctors.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\functors\unaryfunctors.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\functors\nullaryfunctors.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\functors\stlfunctors.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\functors\assignmentfunctors.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\cuda\complex.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\indexedviewhelper.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\reshapedhelper.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arithmeticsequence.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\io.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\densecoeffsbase.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\densebase.h
+	"../plugins/CommonCwiseUnaryOps.h"
+	"../plugins/BlockMethods.h"
+	"../plugins/IndexedViewMethods.h"
+	"../plugins/ReshapedMethods.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\plugins\commoncwiseunaryops.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\plugins\blockmethods.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\plugins\indexedviewmethods.h
+	"IndexedViewMethods.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\plugins\reshapedmethods.h
+	"ReshapedMethods.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\matrixbase.h
+	"../plugins/CommonCwiseBinaryOps.h"
+	"../plugins/MatrixCwiseUnaryOps.h"
+	"../plugins/MatrixCwiseBinaryOps.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\plugins\commoncwisebinaryops.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\plugins\matrixcwiseunaryops.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\plugins\matrixcwisebinaryops.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\eigenbase.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\product.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\coreevaluators.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\assignevaluator.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\assign.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arraybase.h
+	"../plugins/MatrixCwiseUnaryOps.h"
+	"../plugins/ArrayCwiseUnaryOps.h"
+	"../plugins/CommonCwiseBinaryOps.h"
+	"../plugins/MatrixCwiseBinaryOps.h"
+	"../plugins/ArrayCwiseBinaryOps.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\plugins\arraycwiseunaryops.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\plugins\arraycwisebinaryops.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\blasutil.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\densestorage.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\nestbyvalue.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\returnbyvalue.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\noalias.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\plainobjectbase.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\matrix.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\array.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\cwiseternaryop.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\cwisebinaryop.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\cwiseunaryop.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\cwisenullaryop.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\cwiseunaryview.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\selfcwisebinaryop.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\dot.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\stablenorm.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\stride.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\mapbase.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\map.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\ref.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\block.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\vectorblock.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\indexedview.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\reshaped.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\transpose.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\diagonalmatrix.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\diagonal.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\diagonalproduct.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\redux.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\visitor.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\fuzzy.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\swap.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\commainitializer.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\generalproduct.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\solve.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\inverse.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\solverbase.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\permutationmatrix.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\transpositions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\triangularmatrix.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\selfadjointview.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\generalblockpanelkernel.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\parallelizer.h
+	<atomic>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\productevaluators.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\generalmatrixvector.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\generalmatrixmatrix.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\solvetriangular.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\generalmatrixmatrixtriangular.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\selfadjointmatrixvector.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\selfadjointmatrixmatrix.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\selfadjointproduct.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\selfadjointrank2update.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\triangularmatrixvector.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\triangularmatrixmatrix.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\triangularsolvermatrix.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\triangularsolvervector.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\bandmatrix.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\coreiterators.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\conditionestimator.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\altivec\matrixproduct.h
+	"MatrixProductCommon.h"
+	"MatrixProductMMA.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\altivec\matrixproductcommon.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\altivec\matrixproductmma.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arch\neon\generalblockpanelkernel.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\booleanredux.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\select.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\vectorwiseop.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\partialreduxevaluator.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\random.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\replicate.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\reverse.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\arraywrapper.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\stliterators.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\generalmatrixmatrix_blas.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\generalmatrixvector_blas.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\generalmatrixmatrixtriangular_blas.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\selfadjointmatrixmatrix_blas.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\selfadjointmatrixvector_blas.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\triangularmatrixmatrix_blas.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\triangularmatrixvector_blas.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\products\triangularsolvermatrix_blas.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\assign_mkl.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\globalfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\core\util\reenablestupidwarnings.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\specialfunctions
+	<math.h>
+	"../../Eigen/Core"
+	"../../Eigen/src/Core/util/DisableStupidWarnings.h"
+	"src/SpecialFunctions/BesselFunctionsImpl.h"
+	"src/SpecialFunctions/BesselFunctionsBFloat16.h"
+	"src/SpecialFunctions/BesselFunctionsHalf.h"
+	"src/SpecialFunctions/BesselFunctionsPacketMath.h"
+	"src/SpecialFunctions/BesselFunctionsFunctors.h"
+	"src/SpecialFunctions/BesselFunctionsArrayAPI.h"
+	"src/SpecialFunctions/SpecialFunctionsImpl.h"
+	"src/SpecialFunctions/HipVectorCompatibility.h"
+	"src/SpecialFunctions/SpecialFunctionsBFloat16.h"
+	"src/SpecialFunctions/SpecialFunctionsHalf.h"
+	"src/SpecialFunctions/SpecialFunctionsPacketMath.h"
+	"src/SpecialFunctions/SpecialFunctionsFunctors.h"
+	"src/SpecialFunctions/SpecialFunctionsArrayAPI.h"
+	"src/SpecialFunctions/arch/AVX/BesselFunctions.h"
+	"src/SpecialFunctions/arch/AVX/SpecialFunctions.h"
+	"src/SpecialFunctions/arch/AVX512/BesselFunctions.h"
+	"src/SpecialFunctions/arch/AVX512/SpecialFunctions.h"
+	"src/SpecialFunctions/arch/AVX/BesselFunctions.h"
+	"src/SpecialFunctions/arch/AVX/SpecialFunctions.h"
+	"src/SpecialFunctions/arch/NEON/BesselFunctions.h"
+	"src/SpecialFunctions/arch/NEON/SpecialFunctions.h"
+	"src/SpecialFunctions/arch/GPU/SpecialFunctions.h"
+	"../../Eigen/src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\besselfunctionsimpl.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\besselfunctionsbfloat16.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\besselfunctionshalf.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\besselfunctionspacketmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\besselfunctionsfunctors.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\besselfunctionsarrayapi.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\specialfunctionsimpl.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\hipvectorcompatibility.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\specialfunctionsbfloat16.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\specialfunctionshalf.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\specialfunctionspacketmath.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\specialfunctionsfunctors.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\specialfunctionsarrayapi.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\arch\avx\besselfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\arch\avx\specialfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\arch\avx512\besselfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\arch\avx512\specialfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\arch\neon\besselfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\arch\neon\specialfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\specialfunctions\arch\gpu\specialfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\util\cxx11meta.h
+	<vector>
+	"EmulateArray.h"
+	"CXX11Workarounds.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\util\emulatearray.h
+	<array>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\util\cxx11workarounds.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\util\maxsizevector.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\threadpool
+	"../../../Eigen/Core"
+	"../../../Eigen/src/Core/util/DisableStupidWarnings.h"
+	<cstddef>
+	<cstring>
+	<time.h>
+	<vector>
+	<atomic>
+	<condition_variable>
+	<deque>
+	<mutex>
+	<thread>
+	<functional>
+	<memory>
+	<utility>
+	<unordered_map>
+	"src/util/CXX11Meta.h"
+	"src/util/MaxSizeVector.h"
+	"src/ThreadPool/ThreadLocal.h"
+	"src/ThreadPool/ThreadYield.h"
+	"src/ThreadPool/ThreadCancel.h"
+	"src/ThreadPool/EventCount.h"
+	"src/ThreadPool/RunQueue.h"
+	"src/ThreadPool/ThreadPoolInterface.h"
+	"src/ThreadPool/ThreadEnvironment.h"
+	"src/ThreadPool/Barrier.h"
+	"src/ThreadPool/NonBlockingThreadPool.h"
+	"../../../Eigen/src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\threadpool\threadlocal.h
+	<Availability.h>
+	<TargetConditionals.h>
+	<android/ndk-version.h>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\threadpool\threadyield.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\threadpool\threadcancel.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\threadpool\eventcount.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\threadpool\runqueue.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\threadpool\threadpoolinterface.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\threadpool\threadenvironment.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\threadpool\barrier.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\threadpool\nonblockingthreadpool.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensormacros.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorforwarddeclarations.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensormeta.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorfunctors.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorcostmodel.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensordevicedefault.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensordevicethreadpool.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensordevicegpu.h
+	"TensorGpuHipCudaDefines.h"
+	"TensorGpuHipCudaUndefines.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorgpuhipcudadefines.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorgpuhipcudaundefines.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensordevicesycl.h
+	<unordered_set>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorindexlist.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensordimensionlist.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensordimensions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorinitializer.h
+	<initializer_list>
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensortraits.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorrandom.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensoruint128.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorintdiv.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorglobalfunctions.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorbase.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorblock.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorevaluator.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorexpr.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorreduction.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorreductiongpu.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorargmax.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorconcatenation.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorcontractionmapper.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorcontractionblocking.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorcontraction.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorcontractionthreadpool.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorcontractiongpu.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorconversion.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorconvolution.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorfft.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorpatch.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorimagepatch.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorvolumepatch.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorbroadcasting.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorchipping.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorinflation.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorlayoutswap.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensormorphing.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorpadding.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorreverse.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorshuffling.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorstriding.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorcustomop.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorevalto.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorforcedeval.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorgenerator.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorassign.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorscan.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensortrace.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorreductionsycl.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorconvolutionsycl.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorcontractionsycl.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorscansycl.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorexecutor.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensordevice.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorstorage.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensor.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorfixedsize.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensormap.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorref.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\cxx11\src\tensor\tensorio.h
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\data_set.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<cmath>
+	<algorithm>
+	<cstdlib>
+	<stdexcept>
+	<ctime>
+	<exception>
+	<random>
+	<regex>
+	<map>
+	<stdlib.h>
+	<stdio.h>
+	<limits.h>
+	<list>
+	<filesystem>
+	<experimental/filesystem>
+	"config.h"
+	"statistics.h"
+	"scaling.h"
+	"correlations.h"
+	"opennn_strings.h"
+	"tensor_utilities.h"
+	"text_analytics.h"
+	<Availability.h>
+	<filesystem>
+	"filesystem.h"
+	"../../opennn-cuda/opennn-cuda/data_set_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\statistics.h
+	<fstream>
+	<iostream>
+	<limits>
+	<math.h>
+	<vector>
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\scaling.h
+	<fstream>
+	<iostream>
+	<limits>
+	<math.h>
+	<vector>
+	"config.h"
+	"statistics.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\correlations.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<cmath>
+	<algorithm>
+	<cstdlib>
+	<stdexcept>
+	<ctime>
+	<exception>
+	"statistics.h"
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\opennn_strings.h
+	<math.h>
+	<regex>
+	<iostream>
+	<stdlib.h>
+	<algorithm>
+	<string>
+	<string_view>
+	<iostream>
+	<cctype>
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\tensor_utilities.h
+	<algorithm>
+	<fstream>
+	<iostream>
+	<limits>
+	<math.h>
+	<vector>
+	<numeric>
+	<stdio.h>
+	"config.h"
+	"opennn_strings.h"
+	"../eigen/Eigen/Dense"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\dense
+	"Core"
+	"LU"
+	"Cholesky"
+	"QR"
+	"SVD"
+	"Geometry"
+	"Eigenvalues"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\lu
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/misc/Kernel.h"
+	"src/misc/Image.h"
+	"src/LU/FullPivLU.h"
+	"src/LU/PartialPivLU.h"
+	"mkl_lapacke.h"
+	"src/misc/lapacke.h"
+	"src/LU/PartialPivLU_LAPACKE.h"
+	"src/LU/Determinant.h"
+	"src/LU/InverseImpl.h"
+	"src/LU/arch/InverseSize4.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\misc\kernel.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\misc\image.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\lu\fullpivlu.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\lu\partialpivlu.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\misc\lapacke.h
+	"lapacke_config.h"
+	<stdlib.h>
+	<complex.h>
+	<complex.h>
+	"lapacke_mangling.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\misc\lapacke_mangling.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\lu\partialpivlu_lapacke.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\lu\determinant.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\lu\inverseimpl.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\lu\arch\inversesize4.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\cholesky
+	"Core"
+	"Jacobi"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Cholesky/LLT.h"
+	"src/Cholesky/LDLT.h"
+	"mkl_lapacke.h"
+	"src/misc/lapacke.h"
+	"src/Cholesky/LLT_LAPACKE.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\jacobi
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Jacobi/Jacobi.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\jacobi\jacobi.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\cholesky\llt.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\cholesky\ldlt.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\cholesky\llt_lapacke.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\qr
+	"Core"
+	"Cholesky"
+	"Jacobi"
+	"Householder"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/QR/HouseholderQR.h"
+	"src/QR/FullPivHouseholderQR.h"
+	"src/QR/ColPivHouseholderQR.h"
+	"src/QR/CompleteOrthogonalDecomposition.h"
+	"mkl_lapacke.h"
+	"src/misc/lapacke.h"
+	"src/QR/HouseholderQR_LAPACKE.h"
+	"src/QR/ColPivHouseholderQR_LAPACKE.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\householder
+	"Core"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Householder/Householder.h"
+	"src/Householder/HouseholderSequence.h"
+	"src/Householder/BlockHouseholder.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\householder\householder.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\householder\householdersequence.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\householder\blockhouseholder.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\qr\householderqr.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\qr\fullpivhouseholderqr.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\qr\colpivhouseholderqr.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\qr\completeorthogonaldecomposition.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\qr\householderqr_lapacke.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\qr\colpivhouseholderqr_lapacke.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\svd
+	"QR"
+	"Householder"
+	"Jacobi"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/misc/RealSvd2x2.h"
+	"src/SVD/UpperBidiagonalization.h"
+	"src/SVD/SVDBase.h"
+	"src/SVD/JacobiSVD.h"
+	"src/SVD/BDCSVD.h"
+	"mkl_lapacke.h"
+	"src/misc/lapacke.h"
+	"src/SVD/JacobiSVD_LAPACKE.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\misc\realsvd2x2.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\svd\upperbidiagonalization.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\svd\svdbase.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\svd\jacobisvd.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\svd\bdcsvd.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\svd\jacobisvd_lapacke.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\geometry
+	"Core"
+	"SVD"
+	"LU"
+	<limits>
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/Geometry/OrthoMethods.h"
+	"src/Geometry/EulerAngles.h"
+	"src/Geometry/Homogeneous.h"
+	"src/Geometry/RotationBase.h"
+	"src/Geometry/Rotation2D.h"
+	"src/Geometry/Quaternion.h"
+	"src/Geometry/AngleAxis.h"
+	"src/Geometry/Transform.h"
+	"src/Geometry/Translation.h"
+	"src/Geometry/Scaling.h"
+	"src/Geometry/Hyperplane.h"
+	"src/Geometry/ParametrizedLine.h"
+	"src/Geometry/AlignedBox.h"
+	"src/Geometry/Umeyama.h"
+	"src/Geometry/arch/Geometry_SIMD.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\orthomethods.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\eulerangles.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\homogeneous.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\rotationbase.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\rotation2d.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\quaternion.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\angleaxis.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\transform.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\translation.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\scaling.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\hyperplane.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\parametrizedline.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\alignedbox.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\umeyama.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\geometry\arch\geometry_simd.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\eigenvalues
+	"Core"
+	"Cholesky"
+	"Jacobi"
+	"Householder"
+	"LU"
+	"Geometry"
+	"src/Core/util/DisableStupidWarnings.h"
+	"src/misc/RealSvd2x2.h"
+	"src/Eigenvalues/Tridiagonalization.h"
+	"src/Eigenvalues/RealSchur.h"
+	"src/Eigenvalues/EigenSolver.h"
+	"src/Eigenvalues/SelfAdjointEigenSolver.h"
+	"src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h"
+	"src/Eigenvalues/HessenbergDecomposition.h"
+	"src/Eigenvalues/ComplexSchur.h"
+	"src/Eigenvalues/ComplexEigenSolver.h"
+	"src/Eigenvalues/RealQZ.h"
+	"src/Eigenvalues/GeneralizedEigenSolver.h"
+	"src/Eigenvalues/MatrixBaseEigenvalues.h"
+	"mkl_lapacke.h"
+	"src/misc/lapacke.h"
+	"src/Eigenvalues/RealSchur_LAPACKE.h"
+	"src/Eigenvalues/ComplexSchur_LAPACKE.h"
+	"src/Eigenvalues/SelfAdjointEigenSolver_LAPACKE.h"
+	"src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\tridiagonalization.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\realschur.h
+	"./HessenbergDecomposition.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\hessenbergdecomposition.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\eigensolver.h
+	"./RealSchur.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\selfadjointeigensolver.h
+	"./Tridiagonalization.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\generalizedselfadjointeigensolver.h
+	"./Tridiagonalization.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\complexschur.h
+	"./HessenbergDecomposition.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\complexeigensolver.h
+	"./ComplexSchur.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\realqz.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\generalizedeigensolver.h
+	"./RealQZ.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\matrixbaseeigenvalues.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\realschur_lapacke.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\complexschur_lapacke.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\eigenvalues\selfadjointeigensolver_lapacke.h
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\text_analytics.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"tensor_utilities.h"
+	"opennn_strings.h"
+	"tinyxml2.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\filesystem.h
+	<sys/param.h>
+	<wasi/api.h>
+	<windows.h>
+	<shellapi.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<wchar.h>
+	<winioctl.h>
+	<dirent.h>
+	<fcntl.h>
+	<limits.h>
+	<sys/param.h>
+	<sys/stat.h>
+	<sys/time.h>
+	<sys/types.h>
+	<unistd.h>
+	<android/api-level.h>
+	<sys/syscall.h>
+	<sys/vfs.h>
+	<sys/statvfs.h>
+	<strings.h>
+	<langinfo.h>
+	<Availability.h>
+	<compare>
+	<algorithm>
+	<cctype>
+	<chrono>
+	<clocale>
+	<cstdlib>
+	<cstring>
+	<fstream>
+	<functional>
+	<memory>
+	<stack>
+	<stdexcept>
+	<string>
+	<system_error>
+	<type_traits>
+	<utility>
+	<vector>
+	<compare>
+	<chrono>
+	<fstream>
+	<memory>
+	<stack>
+	<stdexcept>
+	<string>
+	<system_error>
+	<vector>
+	<string_view>
+	<experimental/string_view>
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	<ctype.h>
+	<iostream>
+	<vector>
+	"config.h"
+	"tensor_utilities.h"
+	"statistics.h"
+	"data_set.h"
+	<tuple>
+	"../../opennn-cuda/opennn-cuda/struct_layer_cuda.h"
+	"../../opennn-cuda/opennn-cuda/layer_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\pooling_layer.h
+	<cmath>
+	<cstdlib>
+	<ctype.h>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"layer.h"
+	"statistics.h"
+	"perceptron_layer.h"
+	"probabilistic_layer.h"
+	"../../opennn-cuda/opennn-cuda/pooling_layer_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\perceptron_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"layer.h"
+	"probabilistic_layer.h"
+	"../mkl/mkl.h"
+	"../../opennn-cuda/opennn-cuda/struct_perceptron_layer_cuda.h"
+	"../../opennn-cuda/opennn-cuda/perceptron_layer_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\probabilistic_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"layer.h"
+	"opennn_strings.h"
+	"../../opennn-cuda/opennn-cuda/struct_probabilistic_layer_cuda.h"
+	"../../opennn-cuda/opennn-cuda/probabilistic_layer_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\convolutional_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	<ctype.h>
+	<stdexcept>
+	"layer.h"
+	"config.h"
+	"perceptron_layer.h"
+	"probabilistic_layer.h"
+	"pooling_layer.h"
+	"../../opennn-cuda/opennn-cuda/convolutional_layer_cuda.h"
+	"../../opennn-cuda/opennn-cuda/struct_convolutional_layer_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\bounding_layer.h
+	<cmath>
+	<cstdlib>
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	"layer.h"
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\long_short_term_memory_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"layer.h"
+	"probabilistic_layer.h"
+	"perceptron_layer.h"
+	"../../opennn-cuda/opennn-cuda/long_short_term_memory_layer_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\recurrent_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"tensor_utilities.h"
+	"layer.h"
+	"probabilistic_layer.h"
+	"perceptron_layer.h"
+	"../../opennn-cuda/opennn-cuda/struct_recurrent_layer_cuda.h"
+	"../../opennn-cuda/opennn-cuda/recurrent_layer_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\scaling_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"layer.h"
+	"statistics.h"
+	"scaling.h"
+	"opennn_strings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\region_proposal_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"layer.h"
+	"opennn_strings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\non_max_suppression_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"layer.h"
+	"opennn_strings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\unscaling_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"layer.h"
+	"statistics.h"
+	"opennn_strings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\flatten_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"layer.h"
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\neural_network.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	<errno.h>
+	"config.h"
+	"data_set.h"
+	"layer.h"
+	"perceptron_layer.h"
+	"scaling_layer.h"
+	"unscaling_layer.h"
+	"bounding_layer.h"
+	"probabilistic_layer.h"
+	"convolutional_layer.h"
+	"flatten_layer.h"
+	"pooling_layer.h"
+	"long_short_term_memory_layer.h"
+	"recurrent_layer.h"
+	"text_analytics.h"
+	"batch_normalization_layer.h"
+	"../../opennn-cuda/opennn-cuda/neural_network_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\batch_normalization_layer.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"layer.h"
+	"opennn_strings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\loss_index.h
+	<string>
+	<sstream>
+	<fstream>
+	<ostream>
+	<iostream>
+	<cmath>
+	"config.h"
+	"data_set.h"
+	"neural_network.h"
+	"../../opennn-cuda/opennn-cuda/loss_index_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\cross_entropy_error.h
+	<iostream>
+	<fstream>
+	<math.h>
+	"loss_index.h"
+	"data_set.h"
+	"config.h"
+	"../../opennn-cuda/opennn-cuda/cross_entropy_error_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\mean_squared_error.h
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+	<limits>
+	<math.h>
+	"config.h"
+	"loss_index.h"
+	"data_set.h"
+	"../../opennn-cuda/opennn-cuda/mean_squared_error_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\minkowski_error.h
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+	<cmath>
+	"config.h"
+	"loss_index.h"
+	"data_set.h"
+	"../../opennn-cuda/opennn-cuda/minkowski_error_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\normalized_squared_error.h
+	<cmath>
+	<iostream>
+	<fstream>
+	<limits>
+	<string>
+	<sstream>
+	"config.h"
+	"loss_index.h"
+	"data_set.h"
+	"../../opennn-cuda/opennn-cuda/normalized_squared_error_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\sum_squared_error.h
+	<iostream>
+	<fstream>
+	<cmath>
+	<sstream>
+	<string>
+	<limits>
+	"config.h"
+	"loss_index.h"
+	"data_set.h"
+	"../../opennn-cuda/opennn-cuda/sum_squared_error_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\weighted_squared_error.h
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+	<limits>
+	<math.h>
+	"config.h"
+	"loss_index.h"
+	"data_set.h"
+	"../../opennn-cuda/opennn-cuda/weighted_squared_error_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\conjugate_gradient.h
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<climits>
+	<cmath>
+	<ctime>
+	"config.h"
+	"loss_index.h"
+	"optimization_algorithm.h"
+	"learning_rate_algorithm.h"
+
+1679525407 d:\opennn\opennn-6.0.2\opennn\optimization_algorithm.h
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	<iomanip>
+	"config.h"
+	"tensor_utilities.h"
+	"loss_index.h"
+	"../../opennn-cuda/opennn-cuda/optimization_algorithm_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\learning_rate_algorithm.h
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	<cstdlib>
+	"config.h"
+	"neural_network.h"
+	"loss_index.h"
+	"optimization_algorithm.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\gradient_descent.h
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<limits.h>
+	<cmath>
+	<ctime>
+	"loss_index.h"
+	"optimization_algorithm.h"
+	"learning_rate_algorithm.h"
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\levenberg_marquardt_algorithm.h
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<math.h>
+	<time.h>
+	"config.h"
+	"tensor_utilities.h"
+	"optimization_algorithm.h"
+	"../eigen/Eigen/Dense"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\quasi_newton_method.h
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	"config.h"
+	"loss_index.h"
+	"optimization_algorithm.h"
+	"learning_rate_algorithm.h"
+	"../eigen/unsupported/Eigen/KroneckerProduct"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\kroneckerproduct
+	"../../Eigen/Core"
+	"../../Eigen/src/Core/util/DisableStupidWarnings.h"
+	"../../Eigen/src/SparseCore/SparseUtil.h"
+	"src/KroneckerProduct/KroneckerTensorProduct.h"
+	"../../Eigen/src/Core/util/ReenableStupidWarnings.h"
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\eigen\src\sparsecore\sparseutil.h
+
+1672846518 d:\opennn\opennn-6.0.2\eigen\unsupported\eigen\src\kroneckerproduct\kroneckertensorproduct.h
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\model_selection.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<cmath>
+	<ctime>
+	"config.h"
+	"training_strategy.h"
+	"growing_neurons.h"
+	"growing_inputs.h"
+	"genetic_algorithm.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\training_strategy.h
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	"config.h"
+	"loss_index.h"
+	"sum_squared_error.h"
+	"mean_squared_error.h"
+	"normalized_squared_error.h"
+	"minkowski_error.h"
+	"cross_entropy_error.h"
+	"weighted_squared_error.h"
+	"optimization_algorithm.h"
+	"gradient_descent.h"
+	"conjugate_gradient.h"
+	"quasi_newton_method.h"
+	"levenberg_marquardt_algorithm.h"
+	"stochastic_gradient_descent.h"
+	"adaptive_moment_estimation.h"
+	"../../opennn-cuda/opennn-cuda/training_strategy_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\stochastic_gradient_descent.h
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	"config.h"
+	"loss_index.h"
+	"optimization_algorithm.h"
+	"../../opennn-cuda/opennn-cuda/stochastic_gradient_descent_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\adaptive_moment_estimation.h
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	<chrono>
+	<time.h>
+	<iostream>
+	<ctime>
+	<ratio>
+	<chrono>
+	"loss_index.h"
+	"optimization_algorithm.h"
+	"config.h"
+	"../../opennn-cuda/opennn-cuda/adaptive_moment_estimation_cuda.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\growing_neurons.h
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	"training_strategy.h"
+	"neurons_selection.h"
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\neurons_selection.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<cmath>
+	<ctime>
+	"config.h"
+	"training_strategy.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\growing_inputs.h
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	"training_strategy.h"
+	"inputs_selection.h"
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\inputs_selection.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<cmath>
+	<ctime>
+	<limits>
+	"training_strategy.h"
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\genetic_algorithm.h
+	<algorithm>
+	<cmath>
+	<ctime>
+	<fstream>
+	<functional>
+	<iostream>
+	<limits>
+	<numeric>
+	<stdio.h>
+	"training_strategy.h"
+	"tensor_utilities.h"
+	"inputs_selection.h"
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\testing_analysis.h
+	<iostream>
+	<fstream>
+	<string>
+	<sstream>
+	<cmath>
+	<numeric>
+	"config.h"
+	"correlations.h"
+	"data_set.h"
+	"neural_network.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\numerical_differentiation.h
+	<iostream>
+	<vector>
+	<vector>
+	<limits>
+	<cstddef>
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\response_optimization.h
+	<cmath>
+	<cstdlib>
+	<fstream>
+	<iostream>
+	<string>
+	<sstream>
+	"config.h"
+	"neural_network.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\opennn_images.h
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	"opennn.h"
+	"config.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\region_based_object_detector.h
+	<iostream>
+	<fstream>
+	<algorithm>
+	<functional>
+	<limits>
+	<cmath>
+	<ctime>
+	"opennn.h"
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\json_to_xml.h
+
+1672846518 d:\opennn\opennn-6.0.2\opennn\codification.h
+	<algorithm>
+	<fstream>
+	<iostream>
+	<limits>
+	<math.h>
+	<vector>
+	<numeric>
+	<stdio.h>
+	"config.h"
+
+1680135708 c:\users\eleanor\documents\callyxai\include\safe_queue.h
+	<deque>
+	<mutex>
+	<condition_variable>
+
+1680135443 source:c:\users\eleanor\documents\callyxai\src\c_msg.cpp
+	"c_msg.h"
+
+1680135443 c:\users\eleanor\documents\callyxai\include\c_msg.h
+	<boost/serialization/access.hpp>
+	<boost/serialization/serialization.hpp>
+	<boost/serialization/split_member.hpp>
+	<boost/archive/text_iarchive.hpp>
+	<boost/archive/text_oarchive.hpp>
+	<memory>
+	<string>
+	<opennn/opennn.h>
+
+1680135992 source:c:\users\eleanor\documents\callyxai\src\ext_processor.cpp
+	"ext_processor.h"
+
+1680137375 c:\users\eleanor\documents\callyxai\include\ext_processor.h
+	<boost/network/protocol/http/client.hpp>
+	<iostream>
+	<vector>
+	<string>
+	<atomic>
+	<thread>
+	<opennn/opennn.h>
+	"c_msg.h"
+	"safe_queue.h"
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client.hpp
+	<boost/config.hpp>
+	<boost/network/protocol/http/message.hpp>
+	<boost/network/protocol/http/request.hpp>
+	<boost/network/protocol/http/client/response.hpp>
+	<boost/network/traits/ostringstream.hpp>
+	<boost/algorithm/string/classification.hpp>
+	<boost/algorithm/string/split.hpp>
+	<istream>
+	<map>
+	<ostream>
+	<stdexcept>
+	<string>
+	<boost/network/protocol/http/client/facade.hpp>
+	<boost/network/protocol/http/client/macros.hpp>
+	<boost/network/protocol/http/client/options.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message.hpp
+	<string>
+	<cstdint>
+	<boost/network/protocol/http/traits.hpp>
+	<boost/network/protocol/http/message/header/name.hpp>
+	<boost/network/protocol/http/message/header/value.hpp>
+	<boost/network/message.hpp>
+	<boost/network/tags.hpp>
+	<boost/network/protocol/http/impl/message.ipp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits.hpp
+	<boost/network/protocol/http/traits/message_traits.hpp>
+	<boost/network/protocol/http/traits/connection_keepalive.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\message_traits.hpp
+	<boost/network/protocol/http/traits/impl/delimiters.ipp>
+	<boost/network/protocol/http/traits/impl/headers.ipp>
+	<boost/network/protocol/http/traits/impl/content.ipp>
+	<boost/network/protocol/http/traits/impl/request_methods.ipp>
+	<boost/network/protocol/http/traits/impl/response_message.ipp>
+	<boost/network/protocol/http/traits/impl/response_code.ipp>
+	<boost/network/protocol/http/traits/impl/headers_container.ipp>
+	<boost/network/protocol/http/traits/impl/query_container.ipp>
+	<boost/network/protocol/http/traits/impl/cookies_container.ipp>
+	<boost/network/protocol/http/traits/impl/chunk_cache.ipp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\delimiters.ipp
+	<boost/network/protocol/http/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\tags.hpp
+	<boost/mpl/if.hpp>
+	<boost/mpl/vector.hpp>
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\tags.hpp
+	<boost/mpl/vector.hpp>
+	<boost/mpl/inherit.hpp>
+	<boost/mpl/inherit_linearly.hpp>
+	<boost/mpl/placeholders.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\headers.ipp
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\content.ipp
+	<boost/network/protocol/http/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\request_methods.ipp
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\response_message.ipp
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\response_code.ipp
+	<cstdint>
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\headers_container.ipp
+	<boost/algorithm/string/case_conv.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/traits/headers_container.hpp>
+	<boost/utility/enable_if.hpp>
+	<map>
+	<string>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\traits\headers_container.hpp
+	<boost/network/tags.hpp>
+	<boost/network/traits/string.hpp>
+	<map>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\traits\string.hpp
+	<boost/network/support/is_default_string.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+	<string>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\support\is_default_string.hpp
+	<boost/network/tags.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\support\is_default_wstring.hpp
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\query_container.ipp
+	<boost/network/tags.hpp>
+	<map>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\cookies_container.ipp
+	<boost/network/tags.hpp>
+	<map>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\impl\chunk_cache.ipp
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/traits/char.hpp>
+	<list>
+	<vector>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\traits\char.hpp
+	<boost/network/support/is_default_string.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\connection_keepalive.hpp
+	<boost/network/protocol/http/support/is_keepalive.hpp>
+	<boost/network/protocol/http/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\support\is_keepalive.hpp
+	<boost/network/protocol/http/tags.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\header\name.hpp
+	<boost/network/protocol/http/message/header.hpp>
+	<utility>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\header.hpp
+	<boost/fusion/include/adapt_struct.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/assign/list_of.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\header\value.hpp
+	<utility>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\message.hpp
+	<boost/network/detail/directive_base.hpp>
+	<boost/network/detail/wrapper_base.hpp>
+	<boost/network/traits/headers_container.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\detail\directive_base.hpp
+	<boost/network/message_fwd.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\message_fwd.hpp
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\detail\wrapper_base.hpp
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\impl\message.ipp
+	<boost/network/protocol/http/message.hpp>
+	<cstdio>
+	<cstdlib>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\request.hpp
+	<boost/network/protocol/http/impl/request.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\impl\request.hpp
+	<cstdint>
+	<network/uri/uri.hpp>
+	<boost/algorithm/string.hpp>
+	<boost/fusion/container/map.hpp>
+	<boost/fusion/sequence/intrinsic/at_key.hpp>
+	<boost/fusion/sequence/intrinsic/value_at_key.hpp>
+	<boost/network/constants.hpp>
+	<boost/network/protocol/http/message.hpp>
+	<boost/network/protocol/http/message/async_message.hpp>
+	<boost/network/protocol/http/message/header.hpp>
+	<boost/network/protocol/http/message/wrappers/body.hpp>
+	<boost/network/protocol/http/message/wrappers/headers.hpp>
+	<boost/network/support/is_async.hpp>
+	<boost/network/traits/vector.hpp>
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\uri\uri.hpp
+	<iterator>
+	<algorithm>
+	<functional>
+	<memory>
+	<string>
+	<cstdlib>
+	<network/string_view.hpp>
+	<network/optional.hpp>
+	<network/uri/config.hpp>
+	<network/uri/uri_errors.hpp>
+	<network/uri/detail/uri_parts.hpp>
+	<network/uri/detail/encode.hpp>
+	<network/uri/detail/decode.hpp>
+	<network/uri/detail/translate.hpp>
+	<network/uri/uri_builder.hpp>
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\string_view.hpp
+	<string>
+	<iterator>
+	<cassert>
+	<stdexcept>
+	<algorithm>
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\optional.hpp
+	<stdexcept>
+	<type_traits>
+	<utility>
+	<memory>
+	<algorithm>
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\uri\config.hpp
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\uri\uri_errors.hpp
+	<system_error>
+	<network/uri/config.hpp>
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\uri\detail\uri_parts.hpp
+	<string>
+	<utility>
+	<iterator>
+	<network/optional.hpp>
+	<network/string_view.hpp>
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\uri\detail\encode.hpp
+	<network/uri/uri_errors.hpp>
+	<iterator>
+	<cstring>
+	<cassert>
+	<algorithm>
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\uri\detail\decode.hpp
+	<network/uri/uri_errors.hpp>
+	<iterator>
+	<cassert>
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\uri\detail\translate.hpp
+	<string>
+
+1679611496 d:\cpp-netlib\cpp-netlib\deps\uri\include\network\uri\uri_builder.hpp
+	<cstdint>
+	<utility>
+	<type_traits>
+	<network/uri/uri.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\constants.hpp
+	<boost/mpl/if.hpp>
+	<boost/network/support/is_default_string.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\async_message.hpp
+	<boost/optional.hpp>
+	<cstdint>
+	<boost/network/detail/wrapper_base.hpp>
+	<boost/thread/future.hpp>
+	<set>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\body.hpp
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\headers.hpp
+	<boost/network/traits/headers_container.hpp>
+	<boost/network/traits/string.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\support\is_async.hpp
+	<boost/mpl/bool.hpp>
+	<boost/network/support/is_sync.hpp>
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\support\is_sync.hpp
+	<boost/network/tags.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\traits\vector.hpp
+	<boost/network/support/is_default_string.hpp>
+	<vector>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\response.hpp
+	<boost/network/protocol/http/response.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\response.hpp
+	<boost/network/protocol/http/message.hpp>
+	<boost/network/protocol/http/message/async_message.hpp>
+	<boost/network/protocol/http/message/directives/status.hpp>
+	<boost/network/protocol/http/message/directives/status_message.hpp>
+	<boost/network/protocol/http/message/directives/uri.hpp>
+	<boost/network/protocol/http/message/directives/version.hpp>
+	<boost/network/protocol/http/message/message_base.hpp>
+	<boost/network/protocol/http/message/modifiers/body.hpp>
+	<boost/network/protocol/http/message/modifiers/destination.hpp>
+	<boost/network/protocol/http/message/modifiers/headers.hpp>
+	<boost/network/protocol/http/message/modifiers/source.hpp>
+	<boost/network/protocol/http/message/modifiers/status.hpp>
+	<boost/network/protocol/http/message/modifiers/status_message.hpp>
+	<boost/network/protocol/http/message/modifiers/uri.hpp>
+	<boost/network/protocol/http/message/modifiers/version.hpp>
+	<boost/network/protocol/http/message/traits/version.hpp>
+	<boost/network/protocol/http/message/wrappers/destination.hpp>
+	<boost/network/protocol/http/message/wrappers/ready.hpp>
+	<boost/network/protocol/http/message/wrappers/source.hpp>
+	<boost/network/protocol/http/message/wrappers/status.hpp>
+	<boost/network/protocol/http/message/wrappers/status_message.hpp>
+	<boost/network/protocol/http/message/wrappers/version.hpp>
+	<boost/network/protocol/http/impl/response.ipp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\directives\status.hpp
+	<cstdint>
+	<boost/mpl/if.hpp>
+	<boost/network/support/is_async.hpp>
+	<boost/network/tags.hpp>
+	<boost/thread/future.hpp>
+	<boost/variant/apply_visitor.hpp>
+	<boost/variant/static_visitor.hpp>
+	<boost/variant/variant.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\directives\status_message.hpp
+	<boost/network/message/directives/detail/string_directive.hpp>
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\message\directives\detail\string_directive.hpp
+	<boost/mpl/if.hpp>
+	<boost/mpl/or.hpp>
+	<boost/network/support/is_pod.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/utility/enable_if.hpp>
+	<boost/variant/apply_visitor.hpp>
+	<boost/variant/static_visitor.hpp>
+	<boost/variant/variant.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\support\is_pod.hpp
+	<boost/network/tags.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\directives\uri.hpp
+	<boost/network/message/directives/detail/string_directive.hpp>
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\directives\version.hpp
+	<boost/network/message/directives/detail/string_directive.hpp>
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\message_base.hpp
+	<boost/network/support/is_async.hpp>
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\modifiers\body.hpp
+	<boost/concept/requires.hpp>
+	<boost/network/message/directives.hpp>
+	<boost/network/protocol/http/support/client_or_server.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\message\directives.hpp
+	<boost/network/message_fwd.hpp>
+	<boost/network/message/directives/detail/string_directive.hpp>
+	<boost/network/message/directives/header.hpp>
+	<boost/network/message/directives/remove_header.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\message\directives\header.hpp
+	<boost/network/support/is_async.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/utility/enable_if.hpp>
+	<boost/mpl/if.hpp>
+	<boost/mpl/or.hpp>
+	<boost/variant/apply_visitor.hpp>
+	<boost/variant/static_visitor.hpp>
+	<boost/variant/variant.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\message\directives\remove_header.hpp
+	<boost/network/traits/string.hpp>
+	<string>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\support\client_or_server.hpp
+	<boost/network/protocol/http/support/is_server.hpp>
+	<boost/network/protocol/http/support/is_client.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\support\is_server.hpp
+	<boost/network/protocol/http/tags.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\support\is_client.hpp
+	<boost/mpl/if.hpp>
+	<boost/network/protocol/http/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\modifiers\destination.hpp
+	<boost/concept/requires.hpp>
+	<boost/network/protocol/http/support/client_or_server.hpp>
+	<boost/network/support/is_async.hpp>
+	<boost/network/support/pod_or_normal.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/message/directives.hpp>
+	<boost/network/message/modifiers/destination.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\support\pod_or_normal.hpp
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/support/is_pod.hpp>
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\message\modifiers\destination.hpp
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\modifiers\headers.hpp
+	<boost/concept/requires.hpp>
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\modifiers\source.hpp
+	<boost/network/protocol/http/support/client_or_server.hpp>
+	<boost/network/support/is_async.hpp>
+	<boost/concept/requires.hpp>
+	<boost/network/message/directives.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/message/modifiers/source.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\message\modifiers\source.hpp
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\modifiers\status.hpp
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\modifiers\status_message.hpp
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\modifiers\uri.hpp
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\modifiers\version.hpp
+	<boost/mpl/if.hpp>
+	<boost/network/support/is_async.hpp>
+	<boost/network/support/is_sync.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\traits\version.hpp
+	<boost/mpl/or.hpp>
+	<boost/network/support/is_async.hpp>
+	<boost/network/support/is_sync.hpp>
+	<boost/network/tags.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/thread/future.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\destination.hpp
+	<boost/network/protocol/http/message/wrappers/helper.hpp>
+	<boost/network/tags.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\helper.hpp
+	<boost/mpl/if.hpp>
+	<boost/network/tags.hpp>
+	<boost/type_traits/is_base_of.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\ready.hpp
+	<boost/network/detail/wrapper_base.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\source.hpp
+	<boost/network/protocol/http/message/wrappers/helper.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\status.hpp
+	<cstdint>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\status_message.hpp
+	<boost/network/traits/string.hpp>
+	<sstream>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\version.hpp
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\impl\response.ipp
+	<boost/asio/buffer.hpp>
+	<boost/network/traits/vector.hpp>
+	<boost/network/protocol/http/message/header.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/traits/string.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\traits\ostringstream.hpp
+	<boost/mpl/if.hpp>
+	<boost/network/support/is_default_string.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+	<sstream>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\facade.hpp
+	<memory>
+	<functional>
+	<boost/network/protocol/http/client/pimpl.hpp>
+	<boost/network/protocol/http/client/request.hpp>
+	<boost/network/protocol/http/client/response.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\pimpl.hpp
+	<memory>
+	<boost/asio/io_service.hpp>
+	<boost/mpl/and.hpp>
+	<boost/mpl/if.hpp>
+	<boost/mpl/not.hpp>
+	<boost/network/protocol/http/client/async_impl.hpp>
+	<boost/network/protocol/http/client/sync_impl.hpp>
+	<boost/network/protocol/http/traits/connection_policy.hpp>
+	<boost/network/support/is_async.hpp>
+	<boost/network/support/is_sync.hpp>
+	<boost/optional/optional.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\async_impl.hpp
+	<thread>
+	<memory>
+	<functional>
+	<boost/asio/io_service.hpp>
+	<boost/asio/strand.hpp>
+	<boost/network/protocol/http/traits/connection_policy.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\connection_policy.hpp
+	<boost/network/protocol/http/policies/simple_connection.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/protocol/http/policies/pooled_connection.hpp>
+	<boost/network/protocol/http/policies/async_connection.hpp>
+	<boost/network/protocol/http/support/is_simple.hpp>
+	<boost/mpl/and.hpp>
+	<boost/mpl/not.hpp>
+	<boost/network/protocol/http/support/is_keepalive.hpp>
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\policies\simple_connection.hpp
+	<iterator>
+	<memory>
+	<cstdint>
+	<functional>
+	<boost/network/protocol/http/request.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/protocol/http/traits/resolver_policy.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/network/version.hpp>
+	<boost/network/protocol/http/client/connection/sync_base.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/optional/optional.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\resolver_policy.hpp
+	<boost/network/protocol/http/policies/sync_resolver.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/protocol/http/policies/async_resolver.hpp>
+	<boost/mpl/and.hpp>
+	<boost/mpl/if.hpp>
+	<boost/network/protocol/http/support/is_http.hpp>
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\policies\sync_resolver.hpp
+	<unordered_map>
+	<utility>
+	<tuple>
+	<boost/algorithm/string/case_conv.hpp>
+	<boost/network/protocol/http/traits/resolver.hpp>
+	<boost/network/traits/string.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\resolver.hpp
+	<boost/asio/ip/tcp.hpp>
+	<boost/asio/ip/udp.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/mpl/and.hpp>
+	<boost/mpl/if.hpp>
+	<boost/mpl/not.hpp>
+	<boost/network/support/is_tcp.hpp>
+	<boost/network/support/is_udp.hpp>
+	<boost/network/protocol/http/support/is_http.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\support\is_tcp.hpp
+	<boost/mpl/not.hpp>
+	<boost/network/tags.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\support\is_udp.hpp
+	<boost/mpl/not.hpp>
+	<boost/network/support/is_tcp.hpp>
+	<boost/network/tags.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\support\is_http.hpp
+	<boost/network/protocol/http/tags.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\policies\async_resolver.hpp
+	<memory>
+	<unordered_map>
+	<cstdint>
+	<functional>
+	<boost/asio/placeholders.hpp>
+	<boost/asio/strand.hpp>
+	<boost/network/protocol/http/traits/resolver.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/algorithm/string/case_conv.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\version.hpp
+	<boost/network/version.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\sync_base.hpp
+	<functional>
+	<boost/asio/streambuf.hpp>
+	<boost/asio/read.hpp>
+	<boost/asio/write.hpp>
+	<boost/asio/read_until.hpp>
+	<boost/network/protocol/http/traits/resolver_policy.hpp>
+	<boost/network/traits/istringstream.hpp>
+	<boost/network/traits/ostringstream.hpp>
+	<boost/network/protocol/http/response.hpp>
+	<boost/network/protocol/http/client/connection/sync_normal.hpp>
+	<boost/network/protocol/http/client/connection/sync_ssl.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\traits\istringstream.hpp
+	<boost/network/support/is_default_string.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+	<boost/network/tags.hpp>
+	<sstream>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\sync_normal.hpp
+	<iterator>
+	<functional>
+	<boost/asio/steady_timer.hpp>
+	<boost/asio/streambuf.hpp>
+	<boost/network/protocol/http/algorithms/linearize.hpp>
+	<boost/network/protocol/http/response.hpp>
+	<boost/network/protocol/http/traits/resolver_policy.hpp>
+	<boost/network/traits/string.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\algorithms\linearize.hpp
+	<algorithm>
+	<bitset>
+	<cstdint>
+	<boost/algorithm/string/compare.hpp>
+	<boost/concept/requires.hpp>
+	<boost/network/constants.hpp>
+	<boost/network/message/wrappers/body.hpp>
+	<boost/network/protocol/http/message/header/name.hpp>
+	<boost/network/protocol/http/message/header/value.hpp>
+	<boost/network/protocol/http/message/wrappers/headers.hpp>
+	<boost/network/protocol/http/message/wrappers/port.hpp>
+	<boost/network/protocol/http/traits/connection_keepalive.hpp>
+	<boost/network/traits/headers_container.hpp>
+	<boost/network/traits/ostringstream.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/optional.hpp>
+	<boost/range/algorithm/copy.hpp>
+	<boost/version.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\message\wrappers\body.hpp
+	<boost/network/detail/wrapper_base.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/range/iterator_range.hpp>
+	<boost/network/message_fwd.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\port.hpp
+	<cstdint>
+	<network/uri/uri.hpp>
+	<boost/optional.hpp>
+	<boost/version.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\sync_ssl.hpp
+	<functional>
+	<boost/asio/ssl.hpp>
+	<boost/asio/ssl/context.hpp>
+	<boost/asio/ssl/context_base.hpp>
+	<boost/asio/streambuf.hpp>
+	<boost/algorithm/string/predicate.hpp>
+	<boost/network/protocol/http/request.hpp>
+	<boost/network/protocol/http/traits/resolver_policy.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\policies\pooled_connection.hpp
+	<mutex>
+	<unordered_map>
+	<cstdint>
+	<utility>
+	<functional>
+	<boost/algorithm/string/predicate.hpp>
+	<boost/network/protocol/http/client/connection/sync_base.hpp>
+	<boost/network/protocol/http/response.hpp>
+	<boost/network/protocol/http/traits/resolver_policy.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\policies\async_connection.hpp
+	<memory>
+	<functional>
+	<boost/algorithm/string/predicate.hpp>
+	<boost/network/protocol/http/client/connection/async_base.hpp>
+	<boost/network/protocol/http/message/wrappers/protocol.hpp>
+	<boost/network/protocol/http/traits/resolver_policy.hpp>
+	<boost/network/version.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\async_base.hpp
+	<functional>
+	<array>
+	<boost/network/protocol/http/client/connection/connection_delegate_factory.hpp>
+	<boost/network/protocol/http/response.hpp>
+	<boost/network/protocol/http/traits/delegate_factory.hpp>
+	<boost/network/protocol/http/client/connection/async_normal.hpp>
+	<boost/network/protocol/http/traits/resolver_policy.hpp>
+	<boost/network/traits/string.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\connection_delegate_factory.hpp
+	<boost/network/protocol/http/client/connection/connection_delegate.hpp>
+	<boost/network/protocol/http/client/connection/normal_delegate.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/optional/optional.hpp>
+	<boost/throw_exception.hpp>
+	<boost/network/protocol/http/client/connection/ssl_delegate.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\connection_delegate.hpp
+	<cstdint>
+	<functional>
+	<boost/asio/ip/tcp.hpp>
+	<boost/asio/streambuf.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\normal_delegate.hpp
+	<memory>
+	<cstdint>
+	<functional>
+	<boost/asio/io_service.hpp>
+	<boost/asio/ip/tcp.hpp>
+	<boost/asio/placeholders.hpp>
+	<boost/asio/streambuf.hpp>
+	<boost/network/protocol/http/client/connection/connection_delegate.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\ssl_delegate.hpp
+	<memory>
+	<cstdint>
+	<functional>
+	<boost/asio/io_service.hpp>
+	<boost/asio/ssl.hpp>
+	<boost/network/protocol/http/client/connection/connection_delegate.hpp>
+	<boost/network/support/is_default_string.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+	<boost/optional.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\traits\delegate_factory.hpp
+	<boost/network/support/is_async.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\async_normal.hpp
+	<iterator>
+	<cstdint>
+	<boost/algorithm/string/trim.hpp>
+	<boost/asio/steady_timer.hpp>
+	<boost/asio/placeholders.hpp>
+	<boost/asio/strand.hpp>
+	<boost/asio/streambuf.hpp>
+	<boost/assert.hpp>
+	<boost/logic/tribool.hpp>
+	<boost/network/constants.hpp>
+	<boost/network/detail/debug.hpp>
+	<boost/network/protocol/http/algorithms/linearize.hpp>
+	<boost/network/protocol/http/client/connection/async_protocol_handler.hpp>
+	<boost/network/protocol/http/message/wrappers/host.hpp>
+	<boost/network/protocol/http/message/wrappers/uri.hpp>
+	<boost/network/protocol/http/parser/incremental.hpp>
+	<boost/network/protocol/http/traits/delegate_factory.hpp>
+	<boost/network/traits/istream.hpp>
+	<boost/network/traits/ostream_iterator.hpp>
+	<boost/network/version.hpp>
+	<boost/range/algorithm/transform.hpp>
+	<boost/range/iterator_range.hpp>
+	<boost/throw_exception.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\detail\debug.hpp
+	<iostream>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\connection\async_protocol_handler.hpp
+	<iterator>
+	<cstdint>
+	<array>
+	<boost/logic/tribool.hpp>
+	<boost/network/detail/debug.hpp>
+	<boost/network/protocol/http/algorithms/linearize.hpp>
+	<boost/network/protocol/http/parser/incremental.hpp>
+	<boost/network/protocol/http/request_parser.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/thread/future.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\parser\incremental.hpp
+	<iterator>
+	<tuple>
+	<boost/algorithm/string/classification.hpp>
+	<boost/logic/tribool.hpp>
+	<boost/network/tags.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/range.hpp>
+	<utility>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\request_parser.hpp
+	<tuple>
+	<boost/logic/tribool.hpp>
+	<boost/network/protocol/http/request.hpp>
+	<boost/network/protocol/http/impl/request_parser.ipp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\impl\request_parser.ipp
+	<boost/network/protocol/http/request.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\host.hpp
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\uri.hpp
+	<network/uri/uri.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\traits\istream.hpp
+	<boost/network/support/is_default_string.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+	<boost/network/traits/char.hpp>
+	<istream>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\traits\ostream_iterator.hpp
+	<boost/mpl/if.hpp>
+	<boost/network/support/is_default_string.hpp>
+	<boost/network/support/is_default_wstring.hpp>
+	<iterator>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\message\wrappers\protocol.hpp
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\support\is_simple.hpp
+	<boost/network/protocol/http/tags.hpp>
+	<boost/utility/enable_if.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\sync_impl.hpp
+	<memory>
+	<functional>
+	<boost/network/protocol/http/client/options.hpp>
+	<boost/network/protocol/http/request.hpp>
+	<boost/network/protocol/http/tags.hpp>
+	<boost/network/protocol/http/traits/connection_policy.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/optional/optional.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\options.hpp
+	<memory>
+	<boost/asio/io_service.hpp>
+	<boost/network/traits/string.hpp>
+	<boost/optional/optional.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\request.hpp
+	<boost/network/protocol/http/impl/request.hpp>
+
+1679611449 d:\cpp-netlib\cpp-netlib\boost\network\protocol\http\client\macros.hpp
+	<array>
+	<boost/range/iterator_range.hpp>
+	<boost/network/traits/string.hpp>
+	<system_error>
+

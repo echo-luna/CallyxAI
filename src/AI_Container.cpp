@@ -1,0 +1,204 @@
+#include "AI_Container.h"
+
+#include <boost/asio/io_service.hpp>
+#include <boost/bind.hpp>
+#include <boost/thread/thread.hpp>
+
+
+using namespace CallyxAI;
+
+struct AI_Container::c_http
+{
+    void operator()(http_server::request const & req, http_server::connection_ptr connection)
+    {
+        http::server::request::headers_container_type headers = request.headers();
+        std::string method;
+        for (auto it = headers.begin(); it != headers.end(); ++it)
+        {
+            if(it->first == "method") //finds the header named "method"
+            {
+                method = it->second; //and sets the method being used;
+                it = header.end(); //ends the loop as this is the only header we need
+            }
+        }
+        if(method == "POST_UP")
+        {
+            std::stringstream data_in;
+            data_in << body(request);
+            boost::archive::text_iarchive ia(data_in);
+            std::shared_ptr<c_msg> temp;
+            ia >> temp;
+            AI_Container::node_out_down.push(temp);
+            connection->set_status(server::connection::ok);
+            connection->write("REC");
+        }
+        else if(method == "GET_UP")
+        {
+            std::stringstream data_in;
+            boost::archive::text_oarchive oa(data_in);
+            oa << AI_Container::node_out_up.get_front();
+            connection->set_status(server::connection::ok);
+            connection->write(data_in.str());
+        }
+    }
+};
+
+AI_Container::AI_Container(std::string parent_ip) : core_node(main_core_in,node_in_src,node_out_down),
+            input_filter(node_in_up, node_in_src, main_core_in, node_out_down),
+            output_filter(node_out_down, node_out_src, node_out_up),
+            work(ioService)
+            {
+                this->up_node_ip = parent_ip;
+                this->self_ip = generate_random_ip_address()
+                this->uid = generate_uid();
+                init();
+            }
+
+AI_Container::AI_Container() : core_node(main_core_in,node_in_src,node_out_down),
+            input_filter(node_in_up, node_in_src, main_core_in, node_out_down),
+            output_filter(node_out_down, node_out_src, node_out_up),
+            work(ioService)
+            {
+            }
+
+AI_Container::~AI_Container()
+{
+    //dtor
+}
+
+void AI_Container::init()
+{
+    url = "http://" + this->self_ip + ":" + intern_port + "/";
+    c_http c_handle;
+    c_server::options c_options(c_handle);
+    int_server = c_server(c_options.address(this->self_ip).port(intern_port));
+    int_server.run();
+    std::cout<<"AI Container: " << this->uid << " has initiated and constructed successfully." <<std::endl;
+    for(int i = 0; i < 3; i++)
+    {
+        threadpool.create_thread(boost::bind(&boost::asio::io_service::run, &ioService));
+    }
+}
+
+void AI_Container::start()
+{
+
+    ioService.post(boost::bind([&](std::shared_ptr<std::atomic_bool> flag)
+                               {
+                                   while(flag->load())
+                                   {
+                                       this->core_node.loop();
+                                       //set function complete timestamp
+                                   }
+                               }, run_flag));
+
+    ioService.post(boost::bind([&](std::shared_ptr<std::atomic_bool> flag)
+                               {
+                                   while(flag->load())
+                                   {
+                                       this->input_filters.loop();
+                                       //set function complete timestamp
+                                   }
+                               }, run_flag));
+
+    ioService.post(boost::bind([&](std::shared_ptr<std::atomic_bool> flag)
+                               {
+                                   while(flag->load())
+                                   {
+                                       this->output_filter.loop();
+                                       //set function complete timestamp
+                                   }
+                               }, run_flag));
+
+    ioService.post(boost::bind([&](std::shared_ptr<std::atomic_bool> flag)
+                               {
+                                   while(flag->load())
+                                   {
+                                       this->loop();
+                                       //set function complete timestamp
+                                   }
+                               }, run_flag));
+
+}
+
+void AI_Container::loop()
+{
+    http::client::request request(url);
+    request << header("method","GET_UP");
+    http::client::response response = client.get(request);
+    std::stringstream data_in;
+    data_in << body(response);
+    if(data_in.str() != "NONE")
+    {
+        boost::archive::text_iarchive ia(data_in);
+        std::shared_ptr<c_msg> n_msg;
+        ia >> n_msg;
+        node_in_up->push(n_msg);
+    }
+    if(node_out_up->size() > 0)
+    {
+        request = http::client::request(url);
+        request << header("method","POST_UP");
+        data_in.flush();
+        boost::archive::text_oarchive oa(data_in);
+        oa << node_out_up->get_front();
+        request << body(data_in.str());
+        http::client::response response = client.get(request);
+    }
+    healthcheck();
+}
+
+void AI_Container::healthcheck()//maybe add a timestamp parameter so a timestamp can be taken at the start of the function, then after
+{
+    //called at the end of the loop
+    //what was the intention with this?
+    //the intention was to monitor overall throughput by examining data packets received over a given t;
+    //then adjust the weights and such of the filters accordingly.
+    //may also monitor throughput of AI_Core to perform same functionality.
+    //with the debug panel, this will serve as a heartbeat signal, providing regular updates on the natural processing cycle
+    //of the node.
+    //will call "spawn_node" at some point if a new node is needed to increase throughput
+    //takes a current timestamp
+    //checks against timestamp of last run
+    //sees how long it took for all processes to complete
+    //also checks how many messages are still in the downstream queue
+    //against number of messages from last run
+    //over the course of ten(?) runs, evaluate if average downstream queue removal
+    //if average less than 0 (1 for queue was less than last run, 0 for same, -1 queue grew)
+    //then make new node
+
+
+}
+
+void AI_Container::spawn_node(std::string ip)
+{
+    std::shared_ptr<AI_Container> new_node(new AI_Container(ip));
+    sub_nodes.push_back(new_node);
+    new_node->start();
+}
+
+emplate<class Archive>
+void const AI_Container::save(Archive & ar, const unsigned int version)
+{
+    ar << BOOST_SERIALIZATION_NVP(uid);
+    ar << BOOST_SERIALIZATION_NVP(up_node_ip);
+    ar << BOOST_SERIALIZATION_NVP(self_ip);
+    ar << BOOST_SERIALIZATION_NVP(core_node);
+    ar << BOOST_SERIALIZATION_NVP(input_filter);
+    ar << BOOST_SERIALIZATION_NVP(output_filter);
+    ar << BOOST_SERIALIZATION_NVP(sub_nodes);
+}
+
+template<class Archive>
+void AI_Container::load(Archive & ar, const unsigned int version)
+{
+    ar >> uid;
+    ar >> up_node_ip;
+    ar >> self_ip;
+    ar >> core_node;
+    ar >> input_filter;
+    ar >> output_filter;
+    ar >> sub_nodes;
+
+    init();
+}

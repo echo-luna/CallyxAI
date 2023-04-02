@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="CallyxAI" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/CallyxAI" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/CallyxAI" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+			<Target title="HelloWorldTest">
+				<Option output="CallyxAI" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="D:/OpenNN/opennn-6.0.2" />
+			<Add directory="D:/Zmqpp/zmqpp-develop/src" />
+			<Add directory="D:/cpp-netlib/cpp-netlib/libs/network/src" />
+		</Compiler>
+		<Linker>
+			<Add option="-fopenmp" />
+			<Add library="libopennn.a" />
+			<Add library="libboost_serialization-mt.a" />
+			<Add library="libzmq.dll.a" />
+			<Add library="libzmqp.a" />
+			<Add library="libzmqpp.dll" />
+			<Add library="libzmqpp.dll.a" />
+			<Add library="libzmqpp-static.a" />
+			<Add library="libcppnetlib-client-connections.a" />
+			<Add library="libcppnetlib-client-connections.dll.a" />
+			<Add library="libcppnetlib-server-parsers.a" />
+			<Add library="libcppnetlib-server-parsers.dll.a" />
+			<Add directory="D:/OpenNN/opennn-build/opennn" />
+			<Add directory="D:/Zmqpp/zmqpp-build" />
+			<Add directory="D:/cpp-netlib/cpp-netlib-build/libs/" />
+		</Linker>
+		<Unit filename="include/AI_Container.h" />
+		<Unit filename="include/AI_Core.h" />
+		<Unit filename="include/CTX_In.h" />
+		<Unit filename="include/CTX_Out.h" />
+		<Unit filename="include/Host_Container.h" />
+		<Unit filename="include/c_msg.h" />
+		<Unit filename="include/c_support.h" />
+		<Unit filename="include/ext_processor.h" />
+		<Unit filename="include/safe_queue.h" />
+		<Unit filename="src/AI_Container.cpp" />
+		<Unit filename="src/AI_Core.cpp" />
+		<Unit filename="src/CTX_In.cpp" />
+		<Unit filename="src/CTX_Out.cpp" />
+		<Unit filename="src/Host_Container.cpp" />
+		<Unit filename="src/c_msg.cpp" />
+		<Unit filename="src/c_support.cpp" />
+		<Unit filename="src/ext_processor.cpp" />
+		<Unit filename="src/main.cpp">
+			<Option target="HelloWorldTest" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,16 @@
+#include "CTX_In.h"
+
+CTX_In::CTX_In(std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > s1, //node_in_up
+               std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > s2, //node_in_src
+               std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > s3, //main_core_in
+               std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > s4); //node_out_down
+{
+    AI_Core::core_
+    
+    aux_two = s4;
+}
+
+CTX_In::~CTX_In()
+{
+    //dtor
+}

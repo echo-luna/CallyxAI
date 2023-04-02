@@ -1,0 +1,62 @@
+#include "c_msg.h"
+
+using namespace CallyxAI;
+
+c_msg::c_msg(int mid, opennn::type did)
+{
+    //generate uid of msg
+}
+
+c_msg::c_msg(opennn::type did)
+{
+    int * i;
+    this->msg_id = generate_uid(i);
+}
+
+void c_msg::get_mid()
+{
+
+}
+
+void c_msg::get_did()
+{
+
+}
+
+std::vector<std::string> c_msg::get_unprocessed_vector()
+{
+
+}
+
+std::vector<std::string> c_msg::get_processed_vector
+{
+
+}
+
+void c_msg::set_unprccessed_vector(std::vector<std::string>)
+{
+
+}
+
+void c_msg::set_processed_vector(std::vector<std::string>)
+{
+
+}
+
+template<class Archive>
+void const c_msg::save(Archive & ar, const unsigned int version)
+{
+    ar << BOOST_SERIALIZATION_NVP(msg_id);
+    ar << BOOST_SERIALIZATION_NVP(src_id);
+    ar << BOOST_SERIALIZATION_NVP(unprocessed_data);
+    ar << BOOST_SERIALIZATION_NVP(processed_data);
+}
+
+template<class Archive>
+void c_msg::load(Archive & ar, const unsigned int version)
+{
+    ar >> msg_id;
+    ar >> src_id;
+    ar >> unprocessed_data;
+    ar >> processed_data;
+}

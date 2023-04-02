@@ -1,0 +1,50 @@
+#ifndef C_MSG_H
+#define C_MSG_H
+
+//Boost Headers
+#include <boost/serialization/access.hpp>
+#include <boost/serialization/serialization.hpp>
+#include <boost/serialization/split_member.hpp>
+#include <boost/archive/text_iarchive.hpp>
+#include <boost/archive/text_oarchive.hpp>
+
+//STL Headers
+#include <memory>
+#include <string>
+
+#include <opennn/opennn.h>
+
+namespace CallyxAI
+{
+    class c_msg
+    {
+        public:
+            c_msg(int, opennn::type); //permits messages to be reconstructed, if necessary, with new data
+            void get_mid();
+            void get_sid();
+            std::vector<std::string> get_unproccessed_vector();
+            std::vector<std::string> get_proccessed_vector();
+            void set_unproccessed_vector(std::vector<std::string>);
+            void set_proccessed_vector(std::vector<std::string>);
+
+        private:
+
+            int msg_id; //the id of the message
+            opennn::type src_id; //the source of the data, uses the type that the current model uses. It is recommended to register all new IDs with the host container before sending data
+            std::vector<std::string> unproccessed_data; //the token data to be evaluated through the AI
+            std::vector<std::string> processed_data; //the data used as the input training data against the new token data as the "expected" outcome
+
+            friend class boost::serialization::access;
+
+            template<class Archive>
+            void const save(Archive &, const unsigned int);
+
+            template<class Archive>
+            void load(Archive &, const unsigned int);
+
+            BOOST_SERIALIZATION_SPLIT_MEMBER()
+    };
+
+}
+
+#endif // C_MSG_H

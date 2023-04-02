@@ -1,0 +1,92 @@
+#ifndef C_AI_CONTAINER_H
+#define C_AI_CONTAINER_H
+
+#include <boost/network/protocol/http/client.hpp>
+
+#include "AI_Core.h"
+#include "CTX_In.h"
+#include "CTX_Out.h"
+
+using namespace boost::network::http;
+
+namespace CallyxAI
+{
+    std::string intern_port = "9720" //downstream nodes starting from the Host Container connect using this port
+
+    class AI_Container
+    {
+        public:
+            AI_Container(std::string); //the upstream node ip
+            ~AI_Container();
+
+            bool start(); //starts threads
+            void stop(); //stops threads and calls stop on all sub nodes;
+
+        protected:
+
+            struct c_http;
+            typedef http::server<c_http> c_server;
+
+            AI_Container();
+
+            std::string uid; //the uid of the process
+
+            std::atomic_bool run_flag; //synchroncity flag
+
+            std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > node_in_down; //CTX_In downstream output
+            std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > node_in_up; //CTX_In upstream input
+            std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > node_in_src; //CTX_In src data
+
+            std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > node_out_down; //CTX_Out downstream input
+            std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > node_out_up; //CTX_Out upstream output
+            std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > node_out_src; //CTX_Out src data
+
+            std::shared_ptr<SafeQueue<std::shared_ptr<c_msg> > > main_core_in; //main core data input
+
+            AI_Core core_node;
+            CTX_In input_filter;
+            CTX_Out output_filter;
+
+            /**
+            AI_Core(main_core_in,node_in_src,node_out_down)
+            CTX_In(node_in_up, node_in_src, main_core_in, node_out_down)
+            CTX_Out(node_out_down, node_out_src, node_out_up)
+            **/
+
+            std::string up_node_ip; //upstream node IP
+            std::string self_ip; //ip of this node
+
+            c_server int_serv; //internal services
+            http::client client;
+            std::string url;
+
+            boost::asio::io_service ioService;
+            boost::thread_group threadpool;
+            boost::asio::io_service::work work;
+
+
+
+            std::vector<std::shared_ptr<AI_Container> > sub_nodes; //sub domains
+
+            void init(); //initializes the container
+
+            void loop(); //the processing loop
+
+            void healthcheck(); //self diagnostics to determine if a new node is needed, or possibly pruning of nodes
+
+            void spawn_node(); //spawns a new subnode
+
+            //boost serialization methods, should not need to change for subclasses
+            friend class boost::serialization::access;
+
+            template<class Archive>
+            void const save(Archive &, const unsigned int);
+
+            template<class Archive>
+            void load(Archive &, const unsigned int);
+
+            BOOST_SERIALIZATION_SPLIT_MEMBER()
+    };
+}
+
+#endif // C_AI_CONTAINER_H
