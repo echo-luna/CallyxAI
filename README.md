@@ -3,3 +3,6 @@
 
 This is an alpha stage. Version 0.4.2
 Likely will not compile, severe syntax errors. Uploaded to github Just In Case. Plus, revision history is nice.
+
+Here is my last notebook dump regarding my progress on this research sonce May 2022.
+https://drive.proton.me/urls/9Z5MNTCRFR#JTluKfQbag6b
